@@ -1,0 +1,15 @@
+{
+  "name": "practica-intro-javascript",
+  "version": "1.0.0",
+  "description": "Convertir numeros romanos a árabes",
+  "main": "practi-03.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Js",
+    "Node"
+  ],
+  "author": "Alvaro González",
+  "license": "ISC"
+}
