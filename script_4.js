@@ -1,3 +1,4 @@
+'use strict'
 // eslint-disable-next-line no-unused-vars
 function romanToArabic2 (roman) {
   if (roman == null) {

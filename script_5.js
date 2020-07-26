@@ -1,10 +1,10 @@
 'use strict'
 
-// Convierte numero a Numero romano
-export function numberToRoman (num) {
+// Convert number into a Roman numeral
+function numberToRoman (num) {
   const decimalNum = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
   const romanNum = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']
-  let roman = ' '
+  let roman = ''
   if (num < 1 || num > 3999) {
     return 'Number not valid. Enter a number between 1 and 3999.'
   } else if (typeof num !== 'number') {
@@ -17,8 +17,9 @@ export function numberToRoman (num) {
     }
   }
   return roman
-}
-// Convierte numero romano a numero
+};
+
+// Convert Roman numeral into integer
 const conversionTable = {
   M: 1000,
   D: 500,
@@ -28,8 +29,8 @@ const conversionTable = {
   V: 5,
   I: 1
 }
-export function romanToNumber (roman) {
-  const array = roman.toUpperCase().split(' ')
+function romanToNumber (roman) {
+  const array = roman.toUpperCase().split('')
   let total = 0
   let currentNumber = null
   let currentValue = null
@@ -51,13 +52,15 @@ export function romanToNumber (roman) {
   } else {
     return total
   }
-}
+};
+
 // Check if given number is a correct Roman number
-export function isRoman (number) {
+// eslint-disable-next-line no-unused-vars
+function isRoman (number) {
   const result = numberToRoman(romanToNumber(number))
   if (result === number) {
-    return `${number} es núm. romano`
+    return `${number} is a Roman number`
   } else {
-    return `${number} no es un núm. Romano`
+    return `${number} is not valid Roman number`
   }
-}
+};
