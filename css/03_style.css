@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    background-image: url(../images/ciudad_romana_2.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.principal{
+    background-position: center;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    width: 35%;
+    height: 45%;
+    padding: 0px 20px 40px 20px;
+    text-align: center;
+    opacity: 0.8;
+    margin: 15px 40px 15px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.validar h1{
+    color: rgb(18, 139, 71);
+}
+.salida2, .salida3, .salida4, .salida5{
+    color:white;
+    font-size: 17px;
+    background-color: rgb(44, 109, 47);
+    border-radius: 5px;
+    padding: 8px;
+    margin: 5px auto 5px auto;
+    text-align: center;
+    height: 40px;
+    width: 70%;
+}
+.letra{
+    padding: -2px;
+}
+.boton{
+    margin: 0px 5px;
+}
+
+h1{
+    font-size: 22px;
+    color: brown;
+    padding-top: 10px;
+}

@@ -1,50 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script type="text/javascript" src="practi-01.js"></script>
-    <script type="text/javascript" src="practi-02.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<title>Numeros Romanos</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/03_style.css">
+    <script type="text/javascript" src="script_2.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <!-- <script type="text/javascript" src="script_3.js"></script> -->
+    <script type="text/javascript" src="script_4.js"></script>
 </head>
 <body>
-    <br><br>
-    <form action="">
-        <p>
-            Introduzca un nº del 1 al 39:
+<div class="principal validar"> 
+        <h1>Valida tu nº romano</h1>
+        <form>
+        <p class="letra">
+            Introduzca un número romano:
         </p>
-        <input type="text" name="a" size="24">
+        <p class="letra">
+            (letras en mayúscula)
         </p>
+            <input type="text" id='rom5'  name='a' size="15">
         <p>
-        <button type="button" onclick="romano(a)">
+            <button type="button" class="boton"
+            onclick="document.getElementById('salida5').innerHTML=
+            romanToArabic2(document.getElementById('rom5').value)">
+             Mostrar resultado
+            </button>
+            <button type="text" id='rom4' class="boton">
+            Limpiar
+            </button>
+        </p>
+        </form>
+        <span class="resul">El resultado es:</span> 
+        <br>
+        <span id='salida5' class='salida5'> 
+            
+        </span>
+    
+</div>
+
+<div class="principal"> 
+            <h1>Valida tu nº romano</h1>
+            <form>
+            <p class="letra">
+                Introduzca un número romano:
+            </p>
+            <p class="letra">
+                (letras en mayúscula)
+            </p>
+                <input type="text" id='rom4'  name='a' size="15">
+            <p>
+                <button type="button" class="boton"
+                 onclick="document.getElementById('salida4').innerHTML=
+                isRoman(document.getElementById('rom4').value)">
+                Mostrar resultado
+                </button> 
+                <button type="text" id='rom4' class="boton">
+                    Limpiar
+                </button>
+            </p>
+            </form>
+            <span>El resultado es:</span> 
+            <br>
+            <span id='salida4' class='salida4'> 
+                
+            </span>
+        
+</div>
+
+<div class="principal"> 
+        <h1>Conversor de números árabes a romanos</h1>
+        <form>
+        <p>
+            Introduzca un número entre 1 y 3999:
+        </p>
+            <input type="text" id='ara'  name='a' size="15"/>
+        <p>
+            <button type="button" class=""
+             onclick="document.getElementById('salida3').innerHTML=
+                 arabicToRoman(document.getElementById('ara').value)">
+             Mostrar resultado
+             </button>
+            <button type="text" id='rom4' class="boton">
+            Limpiar
+            </button>
+        </p>
+        </form>
+        <span>El resultado es:</span>
+        <br>
+        <span id='salida3' class='salida3'> 
+            
+        </span>
+    
+</div>
+
+<div class="principal"> 
+    <h1>Conversor de números romanos a árabes</h1>
+	<form>
+	<p>
+        Introduzca un número romano válido:
+    </p>
+		<input type="text" id='rom'  name='a' size="15"/>
+	<p>
+        <button type="button" class="boton"
+        onclick="document.getElementById('salida2').innerHTML=
+        romanToArabic(document.getElementById('rom').value)">
         Mostrar resultado
         </button>
-        </p>
-    </form>
-    <div id="salida" class="salida">
-    
-    </div>
-
-
-    <br><br><br><br>
-    <form action="">
-        <p>
-            Introduzca un nº del 1 al 3999:
-        </p>
-        <input type="text" name="a" size="39">
-        <button type="button" onclick="romano(a)">
-        Mostrar resultado
+        <button type="text" id='rom4' class="boton">
+        Limpiar
         </button>
+	</p>
     </form>
-    <div id="salida2" class="salida">
-    
-    </div>
+    <span>El resultado es:</span>
+    <br>
+	<span id='salida2' class='salida2'> 
+        
+    </span>
+
+</div>
 
 
-
-
-
-
-    
 </body>
-</html>
+</html>  
